@@ -181,6 +181,7 @@ public class MainActivity extends AppCompatActivity {
         mAuth.signInWithEmailAndPassword(email, password)
                 // listener for the authorization result task
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                    // onComplete() method to check if authorization task has been completed successfully or not
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         //Log.d("CIS3334", "signInWithEmail:onComplete:" + task.isSuccessful());  // create log displaying that the account was signed-in to successfully
